@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ONE PIECE</title>
+  <style>
+    .yellow {
+      color: rgb(167, 167, 29);
+    }
+
+    .red {
+      color: red;
+    }
+
+    .one-piece-logo {
+      font-family: 'Anton', sans-serif;
+      font-size: 100px;
+      color: #0b6999;
+      position: relative;
+      text-shadow: 3px 3px 0px #000,
+        -1px 0px 0px #000,
+        1px -1px 0px #000,
+        -1px 1px 0px #000;
+    }
+
+    .one-piece-logo .luffy {
+      color: #0b6999;
+    }
+
+    .one-piece-logo::before {
+      font-size: 150px;
+      position: adsolute;
+      left: -120px;
+      top: -50px;
+      color: rgb(119, 116, 116);
+      text-shadow: 3px 3px 0px #731a1a;
+    }
+
+    .one-piece-logo .rope {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 300px;
+      height: 20px;
+      background: url('rope-image-url.jpg') repeat-x;
+      transform: rotate(20deg);
+    }
+
+    * {
+      margin: 0;
+    }
+
+    body {
+      background-color: #b5ab8bc7;
+      color: #14110d;
+    }
+
+    header {
+      width: 97%;
+      text-align: center;
+      position: relative;
+      padding-top: 30pxs;
+      height: 20vh;
+      margin-top: 0;
+    }
+
+    .logo {
+      display: inline-block;
+      vertical-align: middle;
+      width: auto;
+      white-space: nowrap;
+    }
+
+    .logo h1 {
+      font-size: 110px;
+      color: #1a6de2;
+      margin: 0;
+      padding: 0;
+      white-space: nowrap;
+      line-height: 1;
+    }
+
+    nav {
+      display: inline-block;
+      vertical-align: middle;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      padding-right: 20px;
+    }
+
+    nav a {
+      color: #050a7758;
+      font-size: 38px;
+      text-decoration: none;
+      margin-left: 15px;
+      white-space: nowrap;
+    }
+
+    nav a:hover {
+      color: #fb9a08;
+      font-size: 60px;
+      transition: color 1s;
+    }
+
+    .logo {
+      margin: 25px;
+      width: 20%;
+      height: 155px;
+      float: left;
+      padding-left: 5px;
+    }
+
+    .personaje {
+      display: block;
+      padding: 10px;
+      background-color: #b3abb2(103, 137, 162)
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+
+
+    .personaje-datos {
+      display: inline-block;
+      vertical-align: top;
+      width: 650px;
+      margin-right: 3%;
+      padding: 10px;
+      background-color: rgb(121, 115, 120);
+      margin-bottom: 5px;
+      border: 1px solid #7d7d7d;
+      border-radius: 0;
+    }
+
+    .personaje-datos img {
+      float: left;
+      width: 275.3px;
+      margin-right: 15px;
+      object-fit: cover;
+    }
+
+    .personaje-descripcion {
+      overflow: hidden;
+      font-size: 10px;
+      line-height: 1.2;
+      letter-spacing: -1px;
+    }
+
+    .personaje-uno {
+      background-color: rgb(187, 187, 169);
+    }
+
+    .personaje-dos {
+      background-color: rgb(158, 182, 205);
+    }
+
+    .personaje-dos img {
+      width: 276px;/
+    }
+
+    .personaje-tres {
+      background-color: rgb(196, 198, 177);
+    }
+
+    .personaje-tres img {
+      width: 276px;/
+    }
+
+    .personaje-cuatro {
+      background-color: rgb(162, 186, 206);
+    }
+
+    .personaje-cuatro img {
+      width: 276px;/
+    }
+
+    .personaje-cinco {
+      background-color: rgb(207, 208, 185);
+    }
+
+    .personaje-cinco img {
+      width: 276px;/
+    }
+
+    .personaje-seis {
+      background-color: rgb(166, 188, 207);
+    }
+
+    .personaje-seis img {
+      width: 276px;/
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .caja {
+      background-color: rgb(129, 152, 161);
+      padding: 20px;
+      margin: 10px;
+    }
+
+    h2 {
+      font-size: 60px;
+      position: relative;
+      margin-left: 0;
+      margin-top: 10px;
+      text-align: left;
+      color: #25486b
+    }
+
+    h2 img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    p {
+      padding-top: 10px;
+      padding-bottom: 5px;
+      text-align: justify;
+      font-size: 30px;
+    }
+
+    .pie {
+      background-color: rgb(91, 98, 131);
+      margin: 10px;
+      padding: 10px;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="one2p.png" alt="" />
+      <h1 class="one-piece-logo"><span class="yellow">O</span>NE P<span class="red">I</span>ECE</h1>
+    </div>
+    <nav>
+      <a href="#ini">INICIO</a>
+      <a href="#per">PERSONAJES</a>
+      <a href="#tra">TRAILER</a>
+    </nav>
+  </header>
+  <section class="caja">
+    <article>
+      <a id="ini"></a>
+      <h2>INICIO
+        <img src="https://wallpapers.com/images/hd/one-piece-pictures-bjm9tdff9yzguoup.jpg" alt="one piece" width="500"
+          height="100">
+      </h2>
+      <p>
+        One Piece (ひとつなぎの大秘宝ワンピース Wan Pīsu?) es un manga escrito y dibujado por Eiichiro Oda, que ilustra las aventuras
+        de los protagonistas piratas, en concreto la tripulación pirata formada por Monkey D. Luffy, quienes están en la
+        búsqueda de un tesoro llamado One Piece. Fue publicado por primera vez el 19 de julio de 1997 en la revista
+        Shonen Jump.
+        Actualmente ha publicado más de 1000 capítulos (recopilados en más de 100 volúmenes tankōbon ) y ha generado una
+        franquicia global, que incluye una adaptación al anime de Toei Animation, numerosas películas , una serie de
+        imagen real e innumerable merchandising. Desde finales de la década de 2000 ha sido reconocido como el manga más
+        popular de Japón, incluso siendo conmemorado por el Libro Guinness de los récords como el «cómic de un solo
+        autor más vendido del mundo».[1]
+
+        La obra está dividida en dos partes: El mar de la supervivencia: Saga de los supernovatos (サバイバルの海 超新星編
+        Sabaibaru no Umi: Chōshinsei-hen?), y El último mar: Saga del Nuevo Mundo (最後の海 新世界編 Saigo no Umi:
+        Shinsekai-hen?).
+      </p>
+      <h2><img src="https://i.pinimg.com/564x/27/f4/11/27f411081bc5419e98795ab960d048a9.jpg" alt="barco" width="400"
+          height="60"></h2>
+      <p><b>Historia:</b>
+        Eiichiro Oda fue inspirado por Akira Toriyama y sus creaciones de Dragon Ball y Dr. Slump a una edad temprana.
+        Como un niño fue inspirado por los vikingos y aspiraba a convertirse en un artista de manga. Más tarde, creó a
+        el personaje Pandaman para Kinnikuman, de Yudetamago. En 1992, a la edad de diecisiete años, presentó su manga
+        llamado Wanted!. Esto sobresalió en él para unirse al personal de la revista Weekly Shonen Jump, donde se
+        convirtió en un asistente de varios escritores del manga como Shinobu Kaitani, Tokuhiro Masaya y, finalmente,
+        Nobuhiro Watsuki.
+
+        Oda tenía interés en hacer un manga de piratas, tanto por su obsesión por los vikingos como un joven e inspirado
+        en diversos eventos pirata incluyendo el descubrimiento del barco pirata de Edward Teach (conocido por su nombre
+        de pirata Barbanegra ). Escribió dos one-shots separados en la década de 1990, los cuales fueron llamados
+        "Romance Dawn". Las historias introdujeron a Monkey D. Luffy, un muchacho con un sombrero de paja que deseaba
+        ser un legendario pirata. Varios conceptos de la serialización eventuales aparecieron en estas historias,
+        incluso de la inspiración de Luffy por ser un pirata y un misterioso poder que obtuvo de comer una fruta
+        especial que convirtió su cuerpo en goma (un prototipo para la fruta del diablo).
+
+        En agosto de 1997, Oda tomó muchas de sus ideas de "Romance Dawn" y comenzó a escribir una serie semanal bajo el
+        título One Piece. Fue serializada por primera vez en la Weekly Shonen Jump, la revista semanal de Shonen
+        propiedad de Shueisha. La serie se hizo popular a partir de los capítulos iniciales, estableciéndose como una de
+        las series de los mejores manga estrenados.
+
+        Originalmente, Oda creía que su serie duraría cinco años (es decir, One Piece podría haber terminado en 2002),
+        pero fue más de lo esperado y no tiene idea de cuántos años más su historia podría seguir publicándose. Sin
+        embargo, cabe señalar que Oda ha dicho que el final del capítulo 597 marca el final de la primera mitad de One
+        Piece. Oda ya ha previsto el final de One Piece y sin importar el tiempo que tarde en completarlo, terminará de
+        la forma en que pensaba desde el principio.</p>
+      <p><b>Sinopsis:</b>
+        One Piece es la historia de un chico llamado Monkey D. Luffy, quién se inspiró en Shanks, un pirata que le salvó
+        la vida, para convertirse en el Rey de los Piratas. Al comienzo de la serie, veinticuatro años antes de la
+        historia actual, un pirata llamado Gol D. Roger, conocido como el Rey de los Piratas, fue ejecutado, pero antes
+        de su muerte, le dijo a la multitud de su tesoro, el One Piece. Sus palabras desataron lo que sería conocida
+        como «la Gran Era de la Piratería», innumerables piratas se dispusieron a buscar el tesoro causando grandes
+        problemas al Gobierno Mundial. Monkey D. Luffy se convierte en uno de ellos, deseando ser el próximo Rey de los
+        Piratas y se dispone a reunir compañeros de tripulación y comenzar sus aventuras.</p>
+    </article>
+    <article>
+      <a id="per"></a>
+      <h2>PERSONAJES</h2>
+      <section class="personaje" id="luffy">
+        <div class="personaje-datos personaje-uno">
+          <img
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8da90f8b-3204-456f-89f2-fd95f18dc622/d9axm7a-17ab5353-80ae-4a0d-a1f7-c41fc30fe752.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzhkYTkwZjhiLTMyMDQtNDU2Zi04OWYyLWZkOTVmMThkYzYyMlwvZDlheG03YS0xN2FiNTM1My04MGFlLTRhMGQtYTFmNy1jNDFmYzMwZmU3NTIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.zoRH0Snd8crLgkee3nEfE9qg3fGGibvcup-tcZCdZo0"
+            alt="Yasopp">
+          <div class="personaje-descripcion">
+            <p><b>Nombre:</b> Monkey D. Luffy</p>
+            <p><b>Tripulación:</b> Banda de</p>
+            <p>Sombrero de Paja</p>
+            <p><b>Posición:</b> Capitán </p>
+            <p><b>Introducción:</b> Capítulo 1</p>
+            <p><b>Recompensa:</b> 3.000.000.000 </p>
+            <p>Berries</p>
+            <p><b>Fruta del Diablo:</b> Gomu Gomu</p>
+          </div>
+        </div>
+        <div class="personaje-datos personaje-dos">
+          <img
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d8ddfe70-0b23-4aef-8d58-769268414fcb/dfnt9e9-54bc73ad-63a5-42f5-ba6e-12193c968808.png/v1/fill/w_737,h_1085,q_70,strp/roronoa_zoro_wanted__one_piece_ch_1058__by_bryanfavr_dfnt9e9-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTg3MCIsInBhdGgiOiJcL2ZcL2Q4ZGRmZTcwLTBiMjMtNGFlZi04ZDU4LTc2OTI2ODQxNGZjYlwvZGZudDllOS01NGJjNzNhZC02M2E1LTQyZjUtYmE2ZS0xMjE5M2M5Njg4MDgucG5nIiwid2lkdGgiOiI8PTEyNzAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ._Mv-1DF1LxDyG6N42_rxChbioyQc_qFMQlzoTldXI28"
+            alt="Otro Personaje">
+          <div class="personaje-descripcion">
+            <p><b>Nombre:</b> Zoro-juurou</p>
+            <p><b>Tripulación:</b> Banda de</p>
+            <p>Sombrero de Paja</p>
+            <p><b>Posición:</b> Espadachin</p>
+            <p>Primer teniente</p>
+            <p><b>Recompensa:</b> 1.111.000.000 </p>
+            <p>Berries</p>
+            <p><b>Fruta del Diablo:</b> Kiri Kiri</p>
+          </div>
+        </div>
+        </div>
+        <div class="personaje-datos personaje-tres">
+          <img
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d8ddfe70-0b23-4aef-8d58-769268414fcb/dfnt9is-daf3de3d-bdbf-4994-8e69-0e1bbf9e31ae.png/v1/fill/w_737,h_1085,q_70,strp/nami_wanted__one_piece_ch_1058__by_bryanfavr_dfnt9is-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTg3MCIsInBhdGgiOiJcL2ZcL2Q4ZGRmZTcwLTBiMjMtNGFlZi04ZDU4LTc2OTI2ODQxNGZjYlwvZGZudDlpcy1kYWYzZGUzZC1iZGJmLTQ5OTQtOGU2OS0wZTFiYmY5ZTMxYWUucG5nIiwid2lkdGgiOiI8PTEyNzAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.fS7kMtWMi1_RgPnhY3gh4BSGMhla2Xosm11jpU45GSk"
+            alt="Otro Personaje">
+          <div class="personaje-descripcion">
+            <p><b>Nombre:</b> Nami</p>
+            <p><b>Tripulación:</b> Banda de</p>
+            <p>Sombrero de Paja</p>
+            <p><b>Posición:</b> Navegante</p>
+            <p><b>Recompensa:</b> 366.000.000 </p>
+            <p>Berries</p>
+            <p><b>Fruta del Diablo:</b> Rumble Rumble</p>
+          </div>
+        </div>
+        <div class="personaje-datos personaje-cuatro">
+          <img
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d8ddfe70-0b23-4aef-8d58-769268414fcb/dfnt9kq-6a27a5b6-9269-47e3-99c4-23b301a4acdd.png/v1/fill/w_737,h_1085,q_70,strp/sanji_wanted__one_piece_ch_1058__by_bryanfavr_dfnt9kq-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTg3MCIsInBhdGgiOiJcL2ZcL2Q4ZGRmZTcwLTBiMjMtNGFlZi04ZDU4LTc2OTI2ODQxNGZjYlwvZGZudDlrcS02YTI3YTViNi05MjY5LTQ3ZTMtOTljNC0yM2IzMDFhNGFjZGQucG5nIiwid2lkdGgiOiI8PTEyNzAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.iLyuLSZavlR9cFM-ZUMfdwgXX6BeCyVbGGWXP0Eel9Y"
+            alt="Otro Personaje">
+          <div class="personaje-descripcion">
+            <p><b>Nombre:</b> Sanji</p>
+            <p><b>Tripulación:</b> Banda de</p>
+            <p>Sombrero de Paja</p>
+            <p><b>Posición:</b> Cocinero</p>
+            <p><b>Recompensa:</b> 1.032.000.000 </p>
+            <p>Berries</p>
+            <p><b>Fruta del Diablo:</b> Suke Suke</p>
+          </div>
+        </div>
+        <div class="personaje-datos personaje-cinco">
+          <img
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d8ddfe70-0b23-4aef-8d58-769268414fcb/dfnt9kh-bf9859e5-ddb0-4d2b-806f-670cd3ad8d56.png/v1/fill/w_737,h_1085,q_70,strp/usopp_wanted__one_piece_ch_1058__by_bryanfavr_dfnt9kh-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTg3MCIsInBhdGgiOiJcL2ZcL2Q4ZGRmZTcwLTBiMjMtNGFlZi04ZDU4LTc2OTI2ODQxNGZjYlwvZGZudDlraC1iZjk4NTllNS1kZGIwLTRkMmItODA2Zi02NzBjZDNhZDhkNTYucG5nIiwid2lkdGgiOiI8PTEyNzAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.xZaLuadxMRhdQ9IS1nJR2qizbsVupSepeddU0sD2ZcY"
+            alt="Otro Personaje">
+          <div class="personaje-descripcion">
+            <p><b>Nombre:</b> Usopp</p>
+            <p><b>Tripulación:</b> Banda de</p>
+            <p>Sombrero de Paja</p>
+            <p><b>Posición:</b> Francotirador</p>
+            <p><b>Recompensa:</b> 500.000.000 </p>
+            <p>Berries</p>
+            <p><b>Fruta del Diablo:</b> Pocket Pocket</p>
+          </div>
+        </div>
+        <div class="personaje-datos personaje-seis">
+          <img
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d8ddfe70-0b23-4aef-8d58-769268414fcb/dfnt9lc-d5d2c744-582a-4d3d-ab07-6dfc3ca18088.png/v1/fill/w_737,h_1085,q_70,strp/chopper_wanted__one_piece_ch_1058__by_bryanfavr_dfnt9lc-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTg3MCIsInBhdGgiOiJcL2ZcL2Q4ZGRmZTcwLTBiMjMtNGFlZi04ZDU4LTc2OTI2ODQxNGZjYlwvZGZudDlsYy1kNWQyYzc0NC01ODJhLTRkM2QtYWIwNy02ZGZjM2NhMTgwODgucG5nIiwid2lkdGgiOiI8PTEyNzAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.fEnLlN900MzcgBTba0A7iAvU99cKjpKAYmDa8V8Hw2A"
+            alt="Otro Personaje">
+          <div class="personaje-descripcion">
+            <p><b>Nombre:</b> Chopper</p>
+            <p><b>Tripulación:</b> Banda de</p>
+            <p>Sombrero de Paja</p>
+            <p><b>Posición:</b> Medico</p>
+            <p><b>Recompensa:</b> 1.000 </p>
+            <p>Berries</p>
+            <p><b>Fruta del Diablo:</b> Hito Hito</p>
+          </div>
+        </div>
+      </section>
+    </article>
+    <article>
+      <a id="tra"></a>
+      <h2>TRAILER</h2>
+      <iframe width="645" height="488" src="https://www.youtube.com/embed/MCb13lbVGE0"
+        title="ONE PIECE | Netflix Trailer | Anime Version" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+        class="center"></iframe>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
+        reprehenderit laboriosam in minima deserunt, similique illum nobis,
+        ipsam laborum debitis repellendus, velit hic perspiciatis tenetur
+        architecto dolores eveniet. Pariatur, eos!
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
+        reprehenderit laboriosam in minima deserunt, similique illum nobis,
+        ipsam laborum debitis repellendus, velit hic perspiciatis tenetur
+        architecto dolores eveniet. Pariatur, eos!
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
+        reprehenderit laboriosam in minima deserunt, similique illum nobis,
+        ipsam laborum debitis repellendus, velit hic perspiciatis tenetur
+        architecto dolores eveniet. Pariatur, eos!
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
+        reprehenderit laboriosam in minima deserunt, similique illum nobis,
+        ipsam laborum debitis repellendus, velit hic perspiciatis tenetur
+        architecto dolores eveniet. Pariatur, eos!
+      </p>
+    </article>
+  </section>
+  <footer class="pie">
+    <p>DERECHOS RESERVADOS</p>
+  </footer>
+</body>
+
+</html>
